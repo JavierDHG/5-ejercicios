@@ -1,2 +1,2 @@
-# DataStructuresTemplates
-This is a repository of several templates of Data Structures.
+# Practical exercises
+This is a repository of several Practical exercises templates.
