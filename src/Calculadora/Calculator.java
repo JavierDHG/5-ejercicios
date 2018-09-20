@@ -11,9 +11,9 @@ public class Calculator {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         
         double numx = 0;
-        double numz = 0 ;//The variables of type double start at 0
-        int residue = 0; //The variable of type int start at 0	
-        bw.write("Write the sign" + " of the operation:"+"\n");//Here you enter the sign to make the desired operation
+        double numz = 0 ;	//The variables of type double start at 0
+        int residue = 0; 	//The variable of type int start at 0	
+        bw.write("Write the sign" + " of the operation:"+"\n");	//Here you enter the sign to make the desired operation
         bw.write("+ addiction"+"\n");
         bw.write("- subtract"+"\n");
         bw.write("* multiply"+"\n");
@@ -22,49 +22,49 @@ public class Calculator {
         bw.write("r square root"+"\n");
         bw.write("% division waste"+"\n");
         bw.flush();
-        char option =br.readLine().charAt(0);//The sign placed previously is read
+        char option =br.readLine().charAt(0);	//The sign placed previously is read
         
-        switch(option)//A switch is created that, depending on the sign placed, makes its operation
+        switch(option)		//A switch is created that, depending on the sign placed, makes its operation
         {
             case '+':
-                bw.write("Enter the value of numx"+"\n");//Enter a number for the numx variable
+                bw.write("Enter the value of numx"+"\n");	//Enter a number for the numx variable
                 bw.flush();
-                numx = Integer.parseInt(br.readLine());//The number put in the previous variable is read
-                bw.write("Enter the value of numz"+"\n");//Enter a number for the numz variable
+                numx = Integer.parseInt(br.readLine());	//The number put in the previous variable is read
+                bw.write("Enter the value of numz"+"\n");	//Enter a number for the numz variable
                 bw.flush();
-                numz = Integer.parseInt(br.readLine());//The number put in the previous variable is read
-                bw.write("The result is :"+(numx+numz)+"\n");//The operation is done and it prints the result of the operation
+                numz = Integer.parseInt(br.readLine());	//The number put in the previous variable is read
+                bw.write("The result is :"+(numx+numz)+"\n");	//The operation is done and it prints the result of the operation
                 bw.flush();
                 break;
             case '-':
-                bw.write("Enter the value of numx"+"\n");//Enter a number for the numx variable
+                bw.write("Enter the value of numx"+"\n");	//Enter a number for the numx variable
                 bw.flush();
-                numx = Integer.parseInt(br.readLine());//The number put in the previous variable is read
-                bw.write("Enter the value of numz"+"\n");//Enter a number for the numz variable
+                numx = Integer.parseInt(br.readLine());	//The number put in the previous variable is read
+                bw.write("Enter the value of numz"+"\n");	//Enter a number for the numz variable
                 bw.flush();
-                numz = Integer.parseInt(br.readLine());//The number put in the previous variable is read
-                bw.write("The result is :"+(numx-numz)+"\n");//The operation is done and it prints the result of the operation
+                numz = Integer.parseInt(br.readLine());		//The number put in the previous variable is read
+                bw.write("The result is :"+(numx-numz)+"\n");	//The operation is done and it prints the result of the operation
                 bw.flush();
                 break;    
             case '*':
-                bw.write("Enter the value of xa"+"\n");//Enter a number for the xa variable
+                bw.write("Enter the value of xa"+"\n");		//Enter a number for the xa variable
                 bw.flush();
-                int x1 = Integer.parseInt(br.readLine());//The number put in the previous variable is read
+                int x1 = Integer.parseInt(br.readLine());	//The number put in the previous variable is read
                 bw.write("Enter the value of xb"+"\n");
                 bw.flush();
-                int x2 = Integer.parseInt(br.readLine());//Enter a number for the xb variable
-                int resul1=multi(x1,x2);		 //The operation is performed based on the recursion of this operation
-                bw.write("The result is :"+(resul1)+"\n");//The operation is done and it prints the result of the operation
+                int x2 = Integer.parseInt(br.readLine());	//Enter a number for the xb variable
+                int resul1=multi(x1,x2);			 //The operation is performed based on the recursion of this operation
+                bw.write("The result is :"+(resul1)+"\n");	//The operation is done and it prints the result of the operation
                 bw.flush();
                 break;    
             case '/':
-                bw.write("Enter the value of numx"+"\n");//Enter a number for the numx variable
+                bw.write("Enter the value of numx"+"\n");	//Enter a number for the numx variable
                 bw.flush();
-                numx = Integer.parseInt(br.readLine());//The number put in the previous variable is read
-                bw.write("Enter the value of numz"+"\n");//Enter a number for the numz variable
+                numx = Integer.parseInt(br.readLine());		//The number put in the previous variable is read
+                bw.write("Enter the value of numz"+"\n");	//Enter a number for the numz variable
                 bw.flush();
-                numz = Integer.parseInt(br.readLine());//The number put in the previous variable is read
-                bw.write("The result is :"+(numx/numz)+"\n");//The operation is done and it prints the result of the operation
+                numz = Integer.parseInt(br.readLine());		//The number put in the previous variable is read
+                bw.write("The result is :"+(numx/numz)+"\n");	//The operation is done and it prints the result of the operation
                 bw.flush();
                 break; 
             case 'p':
