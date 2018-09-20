@@ -2,6 +2,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.*;
 public class Palindrome {
+				//Created by Javier David Hernandez Garcia on September 2018.
+				//Date 20/09/18
+
  public static void main(String[] args) throws IOException
     {
         

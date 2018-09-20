@@ -1,6 +1,8 @@
 import  java.io.*;
 
 public class factorial {
+				//Created by Javier David Hernandez Garcia on September 2018.
+				//Date 20/09/18
     
 public static int factorial(int x)//Here the recursion called factorial of type int is created, which contains x which is also of this type
 {
