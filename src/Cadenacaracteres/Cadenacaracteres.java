@@ -17,7 +17,7 @@ public class Cadenacaracteres {
         chain=br.readLine();	//Here we read the message we wrote above
        	word = chain.toCharArray();	//The word is saved in our word arrangement and is changed to carater
         for( i = 0; i < word.length; i++ ){	//A for is created so that the int i goes through our message
-            character=word[i];//Here the position of the letters is saved
+            character=word[i];		//Here the position of the letters is saved
             for(int a = 0; a < word.length; a++ ){ 	//Here the position of the letters is saved with another 
 		 if(word[a]==character){           	//int to compare them and know if they are equal
                     accountant++;		   	//The counter adds up the number of words that you find but that are equal
