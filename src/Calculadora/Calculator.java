@@ -68,29 +68,29 @@ public class Calculator {
                 bw.flush();
                 break; 
             case 'p':
-                bw.write("Enter the value of t"+"\n");//Enter a number for the t variable
+                bw.write("Enter the value of t"+"\n");		//Enter a number for the t variable
                 bw.flush();
-                int x3 = Integer.parseInt(br.readLine());//The number put in the previous variable is read
-                bw.write("Enter the value of t1"+"\n");//Enter a number for the t1 variable
+                int x3 = Integer.parseInt(br.readLine());	//The number put in the previous variable is read
+                bw.write("Enter the value of t1"+"\n");		//Enter a number for the t1 variable
                 bw.flush();
-                int x4 = Integer.parseInt(br.readLine());//Enter a number for the xb variable
-                int resul2=poten(x3,x4);		 //The operation is performed based on the recursion of this operation
-                bw.write("The result is :"+(resul2)+"\n");//The operation is done and it prints the result of the operation
+                int x4 = Integer.parseInt(br.readLine());	//Enter a number for the xb variable
+                int resul2=poten(x3,x4);		 	//The operation is performed based on the recursion of this operation
+                bw.write("The result is :"+(resul2)+"\n");	//The operation is done and it prints the result of the operation
                 bw.flush();
                 break;    
             case 'r':
-                bw.write("Enter the value of numx"+"\n");//Enter a number for the numx variable
+                bw.write("Enter the value of numx"+"\n");	//Enter a number for the numx variable
                 bw.flush();
-                numx = Integer.parseInt(br.readLine());//The number put in the previous variable is read
-                double resul=Math.sqrt(numx);	       //Here the code does the work to get the square root of the previous variable
-                bw.write("The result is :"+ resul+"\n");//The operation is done and it prints the result of the operation
+                numx = Integer.parseInt(br.readLine());		//The number put in the previous variable is read
+                double resul=Math.sqrt(numx);	       		//Here the code does the work to get the square root of the previous variable
+                bw.write("The result is :"+ resul+"\n");	//The operation is done and it prints the result of the operation
                 bw.flush();
                 break;        
             case '%':
-                bw.write("Enter the value of the divider"+"\n");//Enter a number for the numx variable
+                bw.write("Enter the value of the divider"+"\n");	//Enter a number for the numx variable
                 bw.flush();
                 numx = Integer.parseInt(br.readLine());	 	//The number put in the previous variable is read
-                bw.write("Enter the value of the dividend"+"\n");//Enter a number for the numz variable
+                bw.write("Enter the value of the dividend"+"\n");	//Enter a number for the numz variable
                 bw.flush();
                 numz = Integer.parseInt(br.readLine());		//Enter a number for the numz variable
                 residue=(int) (numz%numx);		 	//The operation of the division is made and only the residue of this is taken
