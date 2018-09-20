@@ -4,12 +4,12 @@ public class factorial {
 				//Created by Javier David Hernandez Garcia on September 2018.
 				//Date 20/09/18
     
-public static int factorial(int x)//Here the recursion called factorial of type int is created, which contains x which is also of this type
+public static int factorial(int x)	//Here the recursion called factorial of type int is created, which contains x which is also of this type
 {
 if (x>1)	//An int is created where the result of the operation of x 	  
 return x* factorial(x-1); //Here the condition is placed that if x is greater than one do the operation
 else
-return 1; //If the condition is not met, the original value is returned
+return 1; 	//If the condition is not met, the original value is returned
 }
 
 public static void main(String[] args) throws IOException 
@@ -53,7 +53,7 @@ while(z + y <= lim){				//A conditional is created that, while the sum of "z + y
         bw.write("Here begins the pascal triangle"+"\n"); 
         int floors=0;				//A variable called floors of type int is created
         int[]x=new int[1];			//You create an array of type int called x that will contain the number one
-        bw.write("Number of floors"+"\n");//Here you enter the number of floors you want for the triangle
+        bw.write("Number of floors"+"\n");	//Here you enter the number of floors you want for the triangle
         bw.flush();
         floors = Integer.parseInt(br.readLine());	//The number of floors previously mentioned is read
         for(int i=1;i<=floors;i++){			 // A cycle is created that will print the floors
